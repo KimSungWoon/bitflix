@@ -6,14 +6,14 @@ const Container = styled.div`
   width: 100v2;
   display: flex;
   justify-content: center;
-  font-size: 28px;
-  margin-top: 20px;
+  font-size: 64px;
+  margin-top: 100px;
 `;
 
 const Loader = () => (
   <Container>
     <span role="img" aria-label="Loading">
-      ⏰
+      LOADING......
     </span>
   </Container>
 );
