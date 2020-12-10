@@ -5,7 +5,6 @@ import Movie from "../routes/Movie";
 import Search from "../routes/Search";
 import TV from "../routes/TV";
 import Detail from "../routes/Detail";
-import Main from '../routes/Main';
 
 // 오직 라우터만 관리하는 컴포넌트가 될 것임.
 export default () => (
