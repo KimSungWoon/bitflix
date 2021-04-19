@@ -1,3 +1,5 @@
+https://pedantic-northcutt-3160cd.netlify.app/#/movie
+
 ## 넷플릭스 영화 홈페이지 react로 제작
 
 ### API (자료 끌어오기)
@@ -17,7 +19,7 @@
 
 
 
-##[AWS,Netlify 설정]
+## [AWS,Netlify 설정]
 [AWS]
 
 1. 인스턴스 시작
