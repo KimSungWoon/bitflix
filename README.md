@@ -27,13 +27,13 @@ https://pedantic-northcutt-3160cd.netlify.app/#/movie
 	- Ubuntu Server 18.04 LTS (HVM), SSD Volume Type 
 	- T2.micro 시작
 	- 키페어  생성 >키페어 이름 :  bit1208 > 키페어 다운로드 >  인스턴스 시작 > 인스턴스 보기 > 중지(일시정지),종료(삭제)
-		- 퍼블릭 IPv4 주소 확인 [ IP: 18.224.180.168] [ port :27017 ] 
+		- 퍼블릭 IPv4 주소 확인 [ IP: 18.224.180.***] [ port :2701* ] 
 		  
 
 2. Terminal
 - cd downloads 
 - sudo chmod 400 bit1207.pem > 
-- ssh -i {key file 끌어넣기} ubuntu@[ 18.224.180.168]  > yes
+- ssh -i {key file 끌어넣기} ubuntu@[18.224.180.***]  > yes
 - sudo service mongod restart;
 - sudo vi /etc/mongod.conf
 	- >  bindIP : 0.0.0.0 (전체연결)
@@ -43,7 +43,8 @@ https://pedantic-northcutt-3160cd.netlify.app/#/movie
 - sudo apt-get install -y python3-pip
 - sudo update-alternatives —install /usr/bin/pip pip /usr/bin/pip3 1
 - pip install flask pymongo requests bs4
-- - wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -&&
+-
+- wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -&&
 - echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list&&
 - sudo apt-get update&&
 - sudo apt-get install -y mongodb-org
