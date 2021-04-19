@@ -20,6 +20,7 @@ https://pedantic-northcutt-3160cd.netlify.app/#/movie
 
 
 ## [AWS,Netlify 설정]
+
 [AWS]
 
 1. 인스턴스 시작
@@ -60,7 +61,5 @@ https://pedantic-northcutt-3160cd.netlify.app/#/movie
 
 
 [Netlitfy]
-`올린 후 -> site setting -> build&deploy -> build command: CI= npm run build 로 수정`
+- `올린 후 -> site setting -> build&deploy -> build command: CI= npm run build 로 수정`
 
-
-https://pedantic-northcutt-3160cd.netlify.app/#/movie
